@@ -92,6 +92,30 @@ export function zeroMatrix(cols: number, rows: number): Matrix {
 }
 
 /**
+ * The function creates a zero Matrix object of desired dimensions
+ * @param cols Number of culumns
+ * @param rows Number of rows
+ * @returns Matrix object of (col x row) dimensions filled with 1
+ */
+export function oneMatrix(cols: number, rows: number): Matrix {
+    if (cols < 1) {
+        throw new Error("You need at least one column");
+    }
+    if (rows < 1) {
+        throw new Error("You need at least one row");
+    }
+
+    const values: number[][] = [];
+    for (let i = 0 ; i < rows ; i++) {
+        values.push([]);
+        for (let j = 0 ; j < cols ; j++) {
+            values[i].push(1);
+        }
+    }
+    return new Matrix(values);
+}
+
+/**
  * The function creates a random Matrix object of desired dimensions.
  * All the values in the matrix are going to be between 0 and 1.
  * @param cols Number of culumns
