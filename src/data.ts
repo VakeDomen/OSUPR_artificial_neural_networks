@@ -62,7 +62,7 @@ export function generatePoints(numOfPoints: number): Point[] {
     for (let i = 0; i < numOfPoints; i++) {
         const x = Math.random();
         const y = Math.random();
-        let lab = y >= x ? -1 : 1;
+        let lab = y >= x ? 0 : 1;
         points.push(new Point(x, y, lab));
     }
 

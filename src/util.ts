@@ -1,4 +1,4 @@
-import { Matrix, mapByElt } from "./matrix.js";
+import { Matrix, addScalar, mapByElt, multiplyByElement, oneMatrix, subtractMatrices, zeroMatrix } from "./matrix.js";
 
 export class ActivationFunction {
     static sigmoid = (l: Matrix): Matrix => {

@@ -95,7 +95,7 @@ export function zeroMatrix(cols: number, rows: number): Matrix {
  * The function creates a zero Matrix object of desired dimensions
  * @param cols Number of culumns
  * @param rows Number of rows
- * @returns Matrix object of (col x row) dimensions filled with 1
+ * @returns Matrix object of (col x row) dimensions filled with 0
  */
 export function oneMatrix(cols: number, rows: number): Matrix {
     if (cols < 1) {
